@@ -6,7 +6,6 @@ const Home = () => {
       <p>aqui temos o meu primeiro site</p>
       
       </div>
-     
   };
   
   export default Home;

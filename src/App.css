@@ -1,42 +1,73 @@
+:root {
+  --cor-fundo: #ffffff;
+  --cor-texto: #333;
+  --cor-link: rgb(1, 1, 153);
+  --cor-hover: #64c6ffaa;
+  --cor-nav-bg: rgb(82, 77, 77);
+  --cor-nav-text: white;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: Arial, sans-serif; /* Defina uma fonte padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 20px auto;
+  padding: 20px;
   text-align: center;
 }
 
 .logo {
-  height: 6em;
+  height: 10em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--cor-hover));
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #2daccfaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  background-color: var(--cor-nav-bg);
+  color: var(--cor-nav-text);
+  padding: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.card {
-  padding: 2em;
+nav ul li {
+  padding: 5px 15px;
 }
 
-.read-the-docs {
-  color: #888;
+nav a {
+  color: var(--cor-link);
+  text-decoration: none;
 }
+
+nav a:hover {
+  color: var(--cor-hover);
+}
+
+.blog-content {
+  margin-top: 20px;
+}
+
+.blog-content ul {
+  list-style-type: disc; /* Adiciona marcadores às listas */
+  padding-left: 20px; /* Espaço à esquerda para listas */
+}
+
